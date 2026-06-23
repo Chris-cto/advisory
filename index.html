@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why DDS Founders Fund Requests Penny Warrants | DDS Founders Fund</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0a1628;
+    --gold: #c8a951;
+    --gold-light: #f0df94;
+    --gold-dark: #8a6818;
+    --bg: #f7f8fa;
+    --text: #1c1c1c;
+    --muted: #5a5a5a;
+    --border: rgba(10, 22, 40, 0.08);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    color: var(--text);
+    background: #ffffff;
+    line-height: 1.65;
+  }
+
+  .gold-gradient-text {
+    background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ---------- HEADER / NAV ---------- */
+  header.site-header {
+    background-color: rgb(10, 22, 40);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  .nav-wrap {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+  }
+
+  .logo .dds {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    font-size: clamp(42px, 5vw, 56px);
+    background: linear-gradient(135deg, #f0df94, #c8a951, #8a6818);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .logo .wordmark {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    min-width: 170px;
+  }
+
+  .logo .wordmark .ff {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.25;
+    white-space: nowrap;
+    font-size: clamp(11px, 1.2vw, 14px);
+    letter-spacing: 0.01em;
+  }
+
+  .logo .wordmark .dt {
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(200, 169, 81);
+    white-space: nowrap;
+    font-size: clamp(9px, 1vw, 11px);
+    letter-spacing: 0.15em;
+  }
+
+  @media (max-width: 639px) {
+    .logo .wordmark { display: none; }
+  }
+
+  nav.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  nav.main-nav a.nav-link {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color .15s;
+  }
+
+  nav.main-nav a.nav-link:hover {
+    color: #fff;
+  }
+
+  nav.main-nav a.cta {
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: rgb(200, 169, 81);
+    color: rgb(10, 22, 40);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.1);
+    transition: transform .15s;
+  }
+
+  nav.main-nav a.cta:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 767px) {
+    nav.main-nav { display: none; }
+  }
+
+  /* ---------- PAGE CONTENT ---------- */
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 64px 24px 80px;
+  }
+
+  h1 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.25;
+    color: var(--navy);
+    margin: 0 0 18px;
+  }
+
+  .intro {
+    font-size: 18px;
+    color: var(--muted);
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--navy);
+    margin: 40px 0 14px;
+  }
+
+  p {
+    margin: 0 0 18px;
+    font-size: 16px;
+  }
+
+  .faq {
+    margin-top: 12px;
+    border-top: 1px solid var(--border);
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+  }
+
+  .faq-item .q {
+    font-weight: 600;
+    color: var(--navy);
+    margin: 0 0 8px;
+    font-size: 16px;
+  }
+
+  .faq-item .a {
+    margin: 0;
+    color: var(--text);
+  }
+
+  .note {
+    margin-top: 48px;
+    padding: 20px 22px;
+    background: #f7f5ef;
+    border-left: 3px solid var(--gold);
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .note strong {
+    color: var(--navy);
+  }
+
+  footer.site-footer {
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding: 28px 24px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  footer.site-footer a {
+    color: var(--muted);
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="logo" href="https://ddsfoundersfund.com/">
+      <span class="dds">DDS</span>
+      <span class="wordmark">
+        <span class="ff">Founders Fund</span>
+        <span class="dt">Dental Technology</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a class="nav-link" href="https://ddsfoundersfund.com/">About</a>
+      <a class="nav-link" href="https://ddsfoundersfund.com/">Opportunity</a>
+      <a class="nav-link" href="https://ddsfoundersfund.com/">Focus</a>
+      <a class="nav-link" href="https://ddsfoundersfund.com/">Team</a>
+      <a class="nav-link" href="https://ddsfoundersfund.com/">Contact</a>
+      <a class="cta" href="https://ddsfoundersfund.com/">Request Information</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>Why DDS Founders Fund Requests Penny Warrants Instead of Advisor Shares</h1>
+  <p class="intro">When DDS Founders Fund joins an advisor schedule, we ask to receive a penny warrant rather than shares issued directly. Here's why, and what it means for you as a founder.</p>
+
+  <h2>Why the warrant structure?</h2>
+  <p>As a fund, DDS occupies a different position than an individual advisor. When shares are issued directly in exchange for services, the recipient can face an immediate taxable event &mdash; the shares may be treated as compensation, generating ordinary income at the time of issuance based on the fair market value of the stock, which can trigger a 1099 and require a valuation. That's an administrative and tax burden that doesn't serve either party.</p>
+
+  <p>A penny warrant, structured correctly, is designed to have minimal current value at issuance, which can help avoid triggering that immediate income recognition. Tax is generally deferred until the warrant is exercised or the underlying shares are sold &mdash; and at that point, the gain may be treated as capital gain rather than ordinary income, depending on the facts.</p>
+
+  <p>This is specific to DDS's position as a fund vehicle paired with a cash investment. It's not a structure every advisor uses, but it's the right fit for how we're set up.</p>
+
+  <h2>Quick FAQ for founders</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <p class="q">What is a warrant?</p>
+      <p class="a">A contractual right to purchase shares at a fixed price ($0.01) at a future date. It's functionally the same as an option to buy shares.</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">Does it affect my cap table now?</p>
+      <p class="a">It's typically noted on a fully-diluted basis but it's the same impact as having issued shares. The warrant shares aren't outstanding until exercised.</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">When does DDS exercise?</p>
+      <p class="a">Usually automatically upon a financing, change of control, or IPO &mdash; the same events that create value for any equity holder.</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">Does DDS pay anything to exercise?</p>
+      <p class="a">Yes, $0.01 per share &mdash; hence "penny" warrant. In practice, this is nominal.</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">Is this different from what other advisors get?</p>
+      <p class="a">Yes. This structure is specific to DDS's fund setup. Your other advisors may receive options or shares directly as individuals, which is fine &mdash; and doesn't change how you document their arrangements.</p>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Note:</strong> This is a general explanation of how DDS structures its advisor arrangements. It is not tax or legal advice. Founders should consult their own company counsel and tax advisors regarding how warrant issuances are treated under their cap table documents and applicable law.
+  </div>
+</main>
+
+<footer class="site-footer">
+  &copy; <span id="year"></span> DDS Founders Fund &middot; <a href="https://ddsfoundersfund.com/">ddsfoundersfund.com</a>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
